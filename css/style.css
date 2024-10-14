@@ -86,15 +86,13 @@ main {
 /* MAIN */
 
 /* Recipe */
-.title-block {
-
-    /* debug */
-    /* background-color: lightpink; */
+.title-none {
+    display: none;
 }
 
 .sweets {
     color: lightgray;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .title-block h2 {
@@ -161,12 +159,24 @@ main {
 }
 
 /* Presentation */
+
+hr {
+    border: 2px solid rgb(254 150 21);
+    width: 15%;
+}
 .img-float img {
     width: 300px;
+    padding: 5px;
 }
 
 
 /* FOOTER */
+.footer {
+    background-color: rgb(124 105 164);
+    color: white;
+    padding: 20px;
+    font-size: 0.7rem;
+}
 
 .policy ul {
     list-style: none;
@@ -198,6 +208,10 @@ main {
     /* Recipe */
     .title-block h2 {
         font-size: 2rem;
+    }
+
+    .title-none {
+        display: inline-block;
     }
 
     /* Card */
