@@ -10,8 +10,38 @@ img {
 }
 
 
+/* UTILITES */
+/* Typography */
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+
 /* COMMON */
 /* Layout */
+
+/* BODY */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* MAIN  */
+main {
+    background-color: rgb(246 245 243);
+}
 
 .container {
     width: 100%;
@@ -19,8 +49,8 @@ img {
     padding: 0 20px;
 
     /* debug */
-    border: 1px solid black;
-    min-height: 300px;
+    /* border: 1px solid black; */
+    /* min-height: 300px; */
 }
 
 .footer-container {
@@ -29,6 +59,7 @@ img {
     padding: 0;
     text-align: center;
 }
+
 .header {
     height: 80px;
     padding: 0 20px;
@@ -38,9 +69,15 @@ img {
     font-family: Nerko One, cursive;
 
     /* debug */
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
+/* HEADER */
+.header-title {
+    font-size: 3rem;
+    color: rgb(254 150 21);
+    text-shadow: 0 0 3px #3b3838;
+}
 
 /* MAIN */
 
@@ -48,11 +85,18 @@ img {
 .title-block {
 
     /* debug */
-    background-color: lightpink;
+    /* background-color: lightpink; */
+}
+
+.sweets {
+    color: lightgray;
+    padding: 10px 0;
 }
 
 .title-block h2 {
-    font-family: Helvetica, sans-serif
+    font-family: Helvetica, sans-serif;
+    color: hsl(267.27deg 22.92% 37.65%);
+    padding-bottom: 10px;
 }
 
 /* Card block */
@@ -61,12 +105,24 @@ img {
     flex-wrap: wrap;
 }
 
+.description-col {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 1px #3b3838;
+    ;
+}
+
 .video-col,
 .description-col {
     width: 100%;
 
     /* debug */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+
+.description-col ul {
+    list-style: none;
+
 }
 
 /* Social */
@@ -79,12 +135,12 @@ img {
 
 /* Banner */
 .banner {
-display: none;
+    display: none;
 }
 
 /* Presentation */
-.img-float img{
-width: 300px;
+.img-float img {
+    width: 300px;
 }
 
 
@@ -111,6 +167,7 @@ width: 300px;
     .container {
         padding: 0 40px;
     }
+
     .header {
         justify-content: flex-start
     }
@@ -121,18 +178,26 @@ width: 300px;
         font-size: 2rem;
     }
 
+    /* Card */
+    .description-col ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        row-gap: 10px;
+    }
+
     /* Social */
     /* .social-icons ul {
 
     } */
 
     /* Banner */
-.banner {
-    display: inline;
+    .banner {
+        display: inline;
     }
 
     /* Presentation */
-     .img-float img { 
+    .img-float img {
         float: left;
     }
 
@@ -141,6 +206,7 @@ width: 300px;
     .contact {
         text-align: center;
     }
+
     .policy ul {
         list-style: none;
         display: flex;
@@ -166,13 +232,13 @@ width: 300px;
         padding: 0 80px;
 
         /* debug */
-        border: 1px solid black;
+        /* border: 1px solid black; */
         min-height: 300px;
     }
 
     /* MAIN */
     /* Recipe */
-    
+
     /* Card block */
     .video-col {
         width: 70%;
@@ -188,12 +254,12 @@ width: 300px;
 
     } */
 
-     /* FOOTER */
-     .footer-container {
+    /* FOOTER */
+    .footer-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: auto;
         text-align: start;
-
+    }
 }
