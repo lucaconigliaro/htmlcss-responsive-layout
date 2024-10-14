@@ -9,6 +9,10 @@ img {
     width: 100%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* UTILITES */
 /* Typography */
@@ -126,6 +130,9 @@ main {
 }
 
 /* Social */
+.social-icons {
+    padding-bottom: 20px;
+}
 .social-icons ul {
     display: flex;
     justify-content: space-between;
@@ -133,9 +140,24 @@ main {
     gap: 10px;
 }
 
+.social-btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: inline-block;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.social-name {
+    display: none;
+}
+
 /* Banner */
 .banner {
     display: none;
+    padding-bottom: 20px;
 }
 
 /* Presentation */
@@ -186,10 +208,11 @@ main {
         row-gap: 10px;
     }
 
-    /* Social */
-    /* .social-icons ul {
+    .social-btn {
+        padding: 5px 50px;
 
-    } */
+    }
+
 
     /* Banner */
     .banner {
@@ -221,6 +244,9 @@ main {
         padding: 0 30PX;
     }
 
+
+
+
 }
 
 
@@ -250,9 +276,13 @@ main {
 
 
     /* Social */
-    /* .social-icons ul {
+    .social-name {
+        display: inline;
+    }
 
-    } */
+    .social-btn {
+        padding: 10px 20px;
+    }
 
     /* FOOTER */
     .footer-container {
