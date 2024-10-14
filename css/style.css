@@ -15,14 +15,20 @@ img {
 
 .container {
     width: 100%;
+    margin: auto;
     padding: 0 20px;
 
     /* debug */
     border: 1px solid black;
     min-height: 300px;
-
 }
 
+.footer-container {
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
 .header {
     height: 80px;
     padding: 0 20px;
@@ -76,26 +82,78 @@ img {
 display: none;
 }
 
+/* Presentation */
+.img-float img{
+width: 300px;
+}
+
+
+/* FOOTER */
+
+.policy ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /****************/
 /* MEDIA QUERY */
 /****************/
+
+
+
 /* TABLET */
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
     .header {
         justify-content: flex-start
     }
 
+    /* MAIN */
+    /* Recipe */
+    .title-block h2 {
+        font-size: 2rem;
+    }
+
     /* Social */
     /* .social-icons ul {
-        
+
     } */
 
     /* Banner */
 .banner {
     display: inline;
     }
-    
 
+    /* Presentation */
+     .img-float img { 
+        float: left;
+    }
+
+    /* FOOTER */
+
+    .contact {
+        text-align: center;
+    }
+    .policy ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        padding: 0 30PX;
+    }
 
 }
 
@@ -110,15 +168,11 @@ display: none;
         /* debug */
         border: 1px solid black;
         min-height: 300px;
-
     }
 
     /* MAIN */
     /* Recipe */
-    .title-block h2 {
-        font-size: 2rem;
-    }
-
+    
     /* Card block */
     .video-col {
         width: 70%;
@@ -131,7 +185,15 @@ display: none;
 
     /* Social */
     /* .social-icons ul {
-        
+
     } */
+
+     /* FOOTER */
+     .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: auto;
+        text-align: start;
 
 }
