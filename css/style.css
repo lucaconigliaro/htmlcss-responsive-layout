@@ -37,7 +37,10 @@ img {
 
 
 /* MAIN */
+
+/* Recipe */
 .title-block {
+
     /* debug */
     background-color: lightpink;
 }
@@ -46,6 +49,7 @@ img {
     font-family: Helvetica, sans-serif
 }
 
+/* Card block */
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -59,17 +63,63 @@ img {
     border: 2px solid blue;
 }
 
+/* Social */
+.social-icons ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+
+/* Banner */
+.banner {
+display: none;
+}
+
 /****************/
 /* MEDIA QUERY */
 /****************/
-
+/* TABLET */
 @media screen and (min-width: 768px) {
     .header {
         justify-content: flex-start
     }
 
+    /* Social */
+    /* .social-icons ul {
+        
+    } */
+
+    /* Banner */
+.banner {
+    display: inline;
+    }
+    
+
+
+}
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 0 80px;
+
+        /* debug */
+        border: 1px solid black;
+        min-height: 300px;
+
+    }
 
     /* MAIN */
+    /* Recipe */
+    .title-block h2 {
+        font-size: 2rem;
+    }
+
+    /* Card block */
     .video-col {
         width: 70%;
     }
@@ -77,4 +127,11 @@ img {
     .description-col {
         width: 30%;
     }
+
+
+    /* Social */
+    /* .social-icons ul {
+        
+    } */
+
 }
